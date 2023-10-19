@@ -1,0 +1,63 @@
+
+
+body {
+   font-size: 15px;
+}
+
+.inputContainer {
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   width: 100%;
+}
+.inputContainer p{
+   display: flex;
+   width: 70%;
+   
+}
+.inputContainer input {
+   
+
+   width: 5vw;
+   text-align: center;
+   margin: 0px;
+   padding: 0px;
+ 
+}
+table {
+
+
+ 
+   border-collapse: collapse;
+   justify-content: center;
+   border: solid 1px;
+   width: 30%;
+   margin: 0 auto; /* Centrado horizontal */
+ 
+
+
+}
+
+
+th, td {
+   border: 1px solid black;
+   text-align: center;
+   list-style-type: none;
+ 
+ 
+}
+
+
+td:first-child {
+   width: 10%;
+}
+td:nth-child(2){
+   width: 10%;
+}
+td:nth-child(3){
+   width: 80%;
+}
+th {
+   background-color: gray;
+}
+
