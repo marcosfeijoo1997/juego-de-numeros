@@ -49,13 +49,13 @@ th, td {
 
 
 td:first-child {
-   width: 10%;
+   width: 15%;
 }
 td:nth-child(2){
-   width: 10%;
+   width: 15%;
 }
 td:nth-child(3){
-   width: 80%;
+   width: 70%;
 }
 th {
    background-color: gray;

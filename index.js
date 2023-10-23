@@ -19,20 +19,22 @@ document.addEventListener("DOMContentLoaded", function() {
         
         
         
-       
+ 
         
         
         
  
 
     test.addEventListener('click',()=>{
-       
+
+ if (valor1&&valor2&&valor3&&valor4){
+
+
         let tr=this.createElement("tr")
         table.appendChild(tr)
       
         
-        
-       
+  
         
             arrCount=[]
             contador+=1
@@ -73,28 +75,17 @@ document.addEventListener("DOMContentLoaded", function() {
         
     
         
-    })
+  }
+
+else   {
+    alert('debes llenar todos los campos')
+}})
 
     newGame.addEventListener('click',()=>{
         randomNumber()
-      
-     
+   
         
     })
-
-
-    document.addEventListener('keydown',(e)=>{
-        if (e.key==="Enter"){
-            compararValores()
-           arrayPush.push(arrayA)
-       
-        }
-
-    })
-
-
-
-
 
     while(arrayA.length<4){
     
@@ -127,9 +118,8 @@ arrayA.push(numRandom)
 
 number[0].addEventListener("change",
 function(e){
-    valor1=parseInt(e.target.value)
 
-
+    valor1=parseInt(e.target.value);
 
 
   ;})
@@ -167,7 +157,10 @@ function pushNumbers(){
 
 function compararValores(){
 
+    valor1===arrayA[0]&&valor2===arrayA[1]&&valor3===arrayA[2]&&valor4===arrayA[3]?
+    alert(`correcto!! el numero era ${valor1}${valor2}${valor3}${valor4}`):
 
+    
 
 valor1===arrayA[0]?green+=1:
 valor1===arrayA[1]||valor1===arrayA[2]||valor1===arrayA[3]?blue+=1:
@@ -185,6 +178,8 @@ number[2].style.backgroundColor='white'
 valor4===arrayA[3]?green+=1:
 valor4===arrayA[0]||valor4===arrayA[1]||valor4===arrayA[2]?blue+=1:
 number[3].style.backgroundColor='white'
+
+
 
 
 }
