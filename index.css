@@ -4,6 +4,12 @@ body {
    font-size: 15px;
 }
 
+h1 {
+   font-size: xx-large;
+   display: flex;
+   justify-content: center;
+ 
+}
 .inputContainer {
    align-items: center;
    justify-content: center;
